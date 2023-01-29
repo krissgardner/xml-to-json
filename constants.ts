@@ -1,0 +1,1 @@
+export const USAGE = 'USAGE: xmlToJson.ts [fileId]';
