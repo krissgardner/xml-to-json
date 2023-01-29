@@ -1,7 +1,10 @@
 // Considerations: xml-json package looks better, but requires too much process error handling and decided
 // against it
-import { readFileSync } from "fs";
+import * as fs from "fs";
 import { xml2json } from "xml-js";
+import * as http from "http";
+import * as https from "https";
+import { Transform } from 'stream';
 
 import { USAGE } from "./constants";
 import { InputFile, Element } from "./types";
@@ -19,7 +22,7 @@ const docId = String(process.argv[2]);
 // Read xml file
 const readFile = (filepath: string) => {
     try {
-        return readFileSync(filepath, 'utf8');
+        return fs.readFileSync(filepath, 'utf8');
     } catch (e) {
         console.error(e);
         process.exit(1);
@@ -57,6 +60,23 @@ const getRealty = (jsonFile: InputFile, id: string) => {
         return realty;
     }
 }
+
+const downloadImage = (url: string, filename: string) => {
+    let client: typeof http | typeof https = http;
+    if (url.toString().indexOf("https") === 0){
+        client = https;
+    }
+
+    client.request(url, function(response) {
+        const data = new Transform();
+        response.on('data', function(chunk) {
+            data.push(chunk);
+        });
+        response.on('end', function() {
+            fs.writeFileSync(filename, data.read());
+        });
+    }).end();
+};
 
 const formatter = (value: unknown) => {
     switch (value) {
@@ -118,6 +138,43 @@ const parseRealty = (realty: Element) => {
     })
 
     // Handle Pictures field
+    const pictures = realty.elements.find((e) => {
+        return e.type === 'element' && e.name === 'Pictures'
+    });
+    if (pictures && pictures.type === 'element') {
+        const images = pictures.elements.filter(e => e.type === 'element' && e.name === 'Image');
+        output['Pictures'] = images.map(img => {
+            const result = {
+                image: '',
+                url: '',
+            }
+
+            if (img.type !== 'element') {
+                return result;
+            }
+            const imgText = img.elements[0];
+            if (imgText?.type !== 'text') {
+                return result;
+            }
+
+            const url = imgText.text;
+            result.url = url;
+
+            const tokens = url.split('.');
+            let extension = tokens[tokens.length - 1];
+            if (!['jpg', 'jpeg', 'png'].includes(extension)) {
+                extension = 'jpeg';
+            }
+
+            const imgId = `img_${new Date().toISOString()}`;
+            const imgPath = `${__dirname}/images/${imgId}.${extension}`;
+
+            downloadImage(url, imgPath);
+            result.image = imgPath;
+
+            return result;
+        })
+    }
 
     return output;
 }
