@@ -4,7 +4,7 @@ import { readFileSync } from "fs";
 import { xml2json } from "xml-js";
 
 import { USAGE } from "./constants";
-import { InputFile } from "./types";
+import { InputFile, Element } from "./types";
 
 // Parse command line arguments
 if (process.argv.length !== 3) {
@@ -58,6 +58,70 @@ const getRealty = (jsonFile: InputFile, id: string) => {
     }
 }
 
+const formatter = (value: unknown) => {
+    switch (value) {
+        case '': {
+            return '';
+        }
+        case 'true': {
+            return true;
+        }
+        case 'false': {
+            return false;
+        }
+    }
+    try {
+        const result = Number(value);
+        return !isNaN(result) ? result : value;
+    } catch (e) {
+        return value;
+    }
+}
+
+const parseRealty = (realty: Element) => {
+    if (realty.type !== 'element') {
+        return;
+    }
+
+    const output: {[key: string]: unknown} = {};
+
+    realty.elements.forEach(element => {
+        // Exclude all invalid fields
+        if (element.type !== 'element') {
+            return;
+        }
+
+        const key = element.name;
+        // Skip, handler called later
+        if (['Pictures'].includes(key)) {
+            return;
+        }
+
+        // Default
+        let value: unknown = "";
+
+        if (element.elements?.length === 1) {
+            const valueElement = element.elements[0];
+            if (valueElement.type === 'text') {
+                value = formatter(valueElement.text || '');
+            }
+        } else if (element.elements?.length > 1) {
+            value = element.elements.map(valueElement => {
+                if (valueElement.type !== 'text') {
+                    return '';
+                }
+                return formatter(valueElement.text || '');
+            });
+        }
+
+        output[key] = value;
+    })
+
+    // Handle Pictures field
+
+    return output;
+}
+
 
 // DRIVER CODE
 
@@ -66,5 +130,10 @@ const xmlString = readFile("./INPUT.xml");
 const jsonString = xml2json(xmlString, {compact: false});
 const jsonFile: InputFile = JSON.parse(jsonString);
 
-const realty = getRealty(jsonFile, docId);
-console.log(realty);
+const jsonRealty = getRealty(jsonFile, docId);
+if (!jsonRealty) {
+    console.warn(`ID ${docId} not found!`);
+    process.exit(0);
+}
+
+const realty = parseRealty(jsonRealty);
