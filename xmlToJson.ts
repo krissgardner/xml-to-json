@@ -6,7 +6,7 @@ import * as http from "http";
 import * as https from "https";
 import { Transform } from 'stream';
 
-import { USAGE } from "./constants";
+import {INPUT_FILE, OUTPUT_FILE, USAGE} from "./constants";
 import { InputFile, Element } from "./types";
 
 // Parse command line arguments
@@ -183,7 +183,7 @@ const parseRealty = (realty: Element) => {
 // DRIVER CODE
 
 // Convert XML into JSON
-const xmlString = readFile("./INPUT.xml");
+const xmlString = readFile(INPUT_FILE);
 const jsonString = xml2json(xmlString, {compact: false});
 const jsonFile: InputFile = JSON.parse(jsonString);
 
@@ -194,3 +194,6 @@ if (!jsonRealty) {
 }
 
 const realty = parseRealty(jsonRealty);
+
+const output = JSON.stringify(realty, null, 2);
+fs.writeFileSync(OUTPUT_FILE, output);
