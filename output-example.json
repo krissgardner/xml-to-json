@@ -1,0 +1,66 @@
+{
+  "metaTitleEN": "Sunny one-bedroom apartment in a newly built building",
+  "EA_ID": "UNIQUE ID",
+  "roomsCount": 2,
+  "docURL": "",
+  "space_m2_option": "between_50_100",
+  "estate_offer_type": "Without commision",
+  "floorMax": 5,
+  "currency": 19,
+  "space_m2": 59,
+  "offer_category": "residential",
+  "amenitiesDisplayEN": ["Unfurnished", "Elevator", "Parking space", "Garage"],
+  "floor": -999,
+  "feauturesDisplayEN": ["Brick", "Electricity"],
+  "bedrooms_option": "one",
+  "metaDescriptionEN": "",
+
+  "specification_optionsEN": [
+    "Space:59 m²",
+    "Space clear:53 m²",
+    "Year:undefined",
+    "Rooms:2",
+    "Bedrooms:1",
+    "Bathrooms:1",
+    "Storeys:-999 from 5",
+    "Aspect:East"
+  ],
+
+  "docId": "UNIQUE UD",
+  "YearBuild": "",
+  "bedroomCount": 1,
+  "toiletCount": 1,
+  "price": 90753,
+  "rooms_option": "two",
+  "space_clear_m2": 53,
+  "published": true,
+  "benefits_optionsEN": ["High quality materials", "Wonderful location"],
+  "aspect_exposure": ["AspectE"],
+  "offerImages": [
+    {
+      "image": "IMAGE URL FROM LOCAL PATH",
+      "title": "",
+      "altEN": "",
+      "alt": "",
+      "titleEN": ""
+    },
+    {
+      "image": "IMAGE URL FROM LOCAL PATH",
+      "title": "",
+      "altEN": "",
+      "alt": "",
+      "titleEN": ""
+    }
+  ],
+  "code": 5269,
+  "region_name": "",
+  "subregion_name": "",
+  "titleEN": "",
+  "priceRange": "bellow_100000",
+  "listing_type": 1,
+
+  "offer_status": "free",
+  "metaDescription": "",
+
+  "timestamp": 12
+}

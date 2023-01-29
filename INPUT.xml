@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed>
+      <title>DEVELOPMENT</title>
+      <Updated>2022-12-06 05:05:23 UTC</Updated>
+      <Website>https://TEST.COM</Website>
+      <Realties>
+            <Realty>
+                  <UniqueId>124</UniqueId>
+                  <OfferType>For Sale</OfferType>
+                  <EstateType>Detached house</EstateType>
+                  <PriceByRequest>no</PriceByRequest>
+                  <PriceInitial>500000</PriceInitial>
+                  <PriceWithDiscount />
+                  <Currency>EUR</Currency>
+                  <RentType />
+                  <TitleEn>Test Title</TitleEn>
+                  <DescriptionEn>This is a test description for a house in a gated complex on the
+                        Kassandra peninsula of Chalkidiki resort.</DescriptionEn>
+                  <YearBuild>2012</YearBuild>
+                  <YearRenovation>0</YearRenovation>
+                  <IsNewBuilding />
+                  <IsUnderConstruction />
+                  <LivingArea>140</LivingArea>
+                  <LotSize>500</LotSize>
+                  <EnergyClass />
+                  <HeatingMedium />
+                  <Floor />
+                  <TotalFloors>0</TotalFloors>
+                  <TotalBedrooms>0</TotalBedrooms>
+                  <TotalBathrooms>0</TotalBathrooms>
+                  <TotalLivingRooms>0</TotalLivingRooms>
+                  <TotalStorageRooms>0</TotalStorageRooms>
+                  <CountryName>Greece</CountryName>
+                  <Region>Macedonia</Region>
+                  <Subregion>Chalkidiki</Subregion>
+                  <Town>Kassandra</Town>
+                  <PostalCode>63085</PostalCode>
+                  <LatitudeNearBy>39,984853</LatitudeNearBy>
+                  <LongitudeNearBy>23,525818</LongitudeNearBy>
+                  <Aircondition />
+                  <Pool />
+                  <Fireplace>yes</Fireplace>
+                  <Garage />
+                  <Garder />
+                  <Lift />
+                  <ParkingPlace>yes</ParkingPlace>
+                  <Water>yes</Water>
+                  <Wifi />
+                  <AccessibleToPeopleWithDisabilities />
+                  <GreatForInvestment />
+                  <Furnished />
+                  <Luxury />
+                  <WithCityView />
+                  <WithForrestView />
+                  <WithMountainView />
+                  <WithSeaView />
+                  <DistanceFromSea>170</DistanceFromSea>
+                  <YoutubeLink />
+                  <Pictures>
+                        <Image>https://images.unsplash.com/photo-1534361960057-19889db9621e</Image>
+                        <Image>https://images.unsplash.com/photo-1504198453319-5ce911bafcde</Image>
+                        <Image>https://images.unsplash.com/photo-1524758631624-e2822e304c36</Image>
+                  </Pictures>
+            </Realty>
+            <Realty>
+                  <UniqueId>456</UniqueId>
+                  <OfferType>For Rent</OfferType>
+                  <EstateType>Apartment</EstateType>
+                  <PriceByRequest>no</PriceByRequest>
+                  <PriceInitial>2000</PriceInitial>
+                  <PriceWithDiscount>1800</PriceWithDiscount>
+                  <Currency>USD</Currency>
+                  <RentType>Monthly</RentType>
+                  <TitleEn>Spacious Apartment in Prime Location</TitleEn>
+                  <DescriptionEn>This beautifully designed apartment is located in the heart of the
+                        city,
+                        close to all amenities. It features two bedrooms, one bathroom, and a
+                        spacious
+                        living room with a fireplace. The kitchen is fully equipped and there is a
+                        balcony
+                        with a city view. The building has an elevator and a parking spot is
+                        included in
+                        the rent.</DescriptionEn>
+                  <YearBuild>2010</YearBuild>
+                  <YearRenovation>0</YearRenovation>
+                  <IsNewBuilding>no</IsNewBuilding>
+                  <IsUnderConstruction>no</IsUnderConstruction>
+                  <LivingArea>100</LivingArea>
+                  <LotSize>0</LotSize>
+                  <EnergyClass>B</EnergyClass>
+                  <HeatingMedium>Gas</HeatingMedium>
+                  <Floor>3</Floor>
+                  <TotalFloors>5</TotalFloors>
+                  <TotalBedrooms>2</TotalBedrooms>
+                  <TotalBathrooms>1</TotalBathrooms>
+                  <TotalLivingRooms>1</TotalLivingRooms>
+                  <TotalStorageRooms>0</TotalStorageRooms>
+                  <CountryName>United States</CountryName>
+                  <Region>New York</Region>
+                  <Subregion>Manhattan</Subregion>
+                  <Town>New York City</Town>
+                  <PostalCode>10001</PostalCode>
+                  <LatitudeNearBy>40.758896</LatitudeNearBy>
+                  <LongitudeNearBy>-73.985130</LongitudeNearBy>
+                  <Aircondition>yes</Aircondition>
+                  <Pool>no</Pool>
+                  <Fireplace>yes</Fireplace>
+                  <Garage>no</Garage>
+                  <Garder>no</Garder>
+                  <Lift>yes</Lift>
+                  <ParkingPlace>yes</ParkingPlace>
+                  <Water>yes</Water>
+                  <Wifi>yes</Wifi>
+                  <AccessibleToPeopleWithDisabilities>no</AccessibleToPeopleWithDisabilities>
+                  <GreatForInvestment>no</GreatForInvestment>
+                  <Furnished>yes</Furnished>
+                  <Luxury>no</Luxury>
+                  <WithCityView>yes</WithCityView>
+                  <WithForrestView>no</WithForrestView>
+                  <WithMountainView>no</WithMountainView>
+                  <WithSeaView>no</WithSeaView>
+                  <DistanceFromSea>0</DistanceFromSea>
+                  <YoutubeLink>https://www.youtube.com/watch?v=hq3yfQnllfQ</YoutubeLink>
+                  <Pictures>
+                        <Image>https://images.unsplash.com/photo-1534361960057-19889db9621e</Image>
+                        <Image>https://images.unsplash.com/photo-1504198453319-5ce911bafcde</Image>
+                        <Image>https://images.unsplash.com/photo-1524758631624-e2822e304c36</Image>
+                  </Pictures>
+            </Realty>
+            <Realty>
+                  <UniqueId>124</UniqueId>
+                  <OfferType>For Sale</OfferType>
+                  <EstateType>Detached house</EstateType>
+                  <PriceByRequest>no</PriceByRequest>
+                  <PriceInitial>500000</PriceInitial>
+                  <PriceWithDiscount />
+                  <Currency>EUR</Currency>
+                  <RentType />
+                  <TitleEn>Test Offer !!! We offer you a housein a gated and well-land.</TitleEn>
+                  <DescriptionEn>This is a test description, with a short and simple explanation of
+                        the property. The house is located in a gated complex on the Kassandra
+                        peninsula of Chalkidiki resort. The house has two floors and is near the
+                        sea. It has a large plot around the house, and includes kitchen and
+                        electrical appliances. The price of the house includes kitchen and
+                        electrical appliances.</DescriptionEn>
+                  <YearBuild>2012</YearBuild>
+                  <YearRenovation>0</YearRenovation>
+                  <IsNewBuilding />
+                  <IsUnderConstruction />
+                  <LivingArea>140</LivingArea>
+                  <LotSize>500</LotSize>
+                  <EnergyClass />
+                  <HeatingMedium />
+                  <Floor />
+                  <TotalFloors>0</TotalFloors>
+                  <TotalBedrooms>0</TotalBedrooms>
+                  <TotalBathrooms>0</TotalBathrooms>
+                  <TotalLivingRooms>0</TotalLivingRooms>
+                  <TotalStorageRooms>0</TotalStorageRooms>
+                  <CountryName>Greece</CountryName>
+                  <Region>Macedonia</Region>
+                  <Subregion>Chalkidiki</Subregion>
+                  <Town>Kassandra</Town>
+                  <PostalCode>63085</PostalCode>
+                  <LatitudeNearBy>39,984853</LatitudeNearBy>
+                  <LongitudeNearBy>23,525818</LongitudeNearBy>
+                  <Aircondition />
+                  <Pool />
+                  <Fireplace>yes</Fireplace>
+                  <Garage />
+                  <Garder />
+                  <Lift />
+                  <ParkingPlace>yes</ParkingPlace>
+                  <Water>yes</Water>
+                  <Wifi />
+                  <AccessibleToPeopleWithDisabilities />
+                  <GreatForInvestment />
+                  <Furnished />
+                  <Luxury />
+                  <WithCityView />
+                  <WithForrestView />
+                  <WithMountainView />
+                  <WithSeaView />
+                  <DistanceFromSea>170</DistanceFromSea>
+                  <YoutubeLink />
+                  <Pictures>
+                        <Image>https://picsum.photos/200/300</Image>
+                        <Image>https://picsum.photos/300/400</Image>
+                        <Image>https://picsum.photos/400/500</Image>
+                        <Image>https://picsum.photos/500/600</Image>
+                        <Image>https://picsum.photos/600/700</Image>
+                  </Pictures>
+            </Realty>
+      </Realties>
+</feed>
