@@ -1,1 +1,1 @@
-export const USAGE = 'USAGE: xmlToJson.ts [fileId]';
+export const USAGE = 'USAGE: xmlToJson.ts [ID]';
